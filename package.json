@@ -2,7 +2,7 @@
   "name": "webpack-tutorial",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "jest",
     "build": "webpack",
