@@ -167,12 +167,12 @@ footer {
   cursor: pointer;
 }
 
-.popup-content{
+.popup-content {
   position: absolute;
   padding: 20px;
 }
 
-.summary{
+.summary {
   display: flex;
   flex-direction: row;
 }
