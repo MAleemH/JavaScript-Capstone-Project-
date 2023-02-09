@@ -52,69 +52,22 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-right: 40px;
 }
 
 .show-name {
   inline-size: 150px;
   overflow-wrap: break-word;
+  margin: 0;
 }
 
-.heart-button {
-  position: relative;
+.display-likes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.heart-button::before {
-  position: absolute;
-  top: 0;
-  left: 20px;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-  width: 20px;
-  height: 30px;
-  border-radius: 40px 40px 0 0;
-  background-color: #574136;
-  content: "";
-  cursor: pointer;
-  transition: background 0.4s;
-}
-
-.heart-button::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
-  width: 20px;
-  height: 30px;
-  border-radius: 40px 40px 0 0;
-  background-color: #574136;
-  content: "";
-  cursor: pointer;
-  transition: background 0.4s;
-}
-
-.heart-button.liked::before,
-.heart-button.liked::after {
-  background-color: #d65076;
-}
-
-.heart-like-button.liked {
-  animation: liked 0.4s ease;
-}
-
-@keyframes liked {
-  0% {
-    transform: scale(0.8);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
+.no-of-likes {
+  margin: 2px 0 0 0;
 }
 
 .buttons {
