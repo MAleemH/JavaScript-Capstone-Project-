@@ -52,12 +52,22 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
 .show-name {
   inline-size: 150px;
   overflow-wrap: break-word;
+  margin: 0;
+}
+
+.display-likes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-of-likes {
+  margin: 2px 0 0 0;
 }
 
 .buttons {

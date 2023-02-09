@@ -1,18 +1,23 @@
 import fetchData from './fetchData.js';
+import getLikes from './getLikes.js';
 
 const showList = document.querySelector('.shows-list');
 
 const displayAllShows = async () => {
   const getData = await fetchData();
-  // console.log(getData);
+  const getLikesData = await getLikes();
   showList.innerHTML = '';
   getData.forEach((data) => {
+    const likes = getLikesData.filter((like) => like.item_id === data.id);
     showList.innerHTML += `
       <div class='card'>
         <img src='${data.image.medium}' alt='Thumbnail' >
         <div class='title-like'>
           <p class='show-name'>${data.name}</p>
-          <i class="fa-regular fa-heart"></i>
+          <div class='display-likes'>
+            <i class="fa-regular fa-heart"></i>
+            <p class='no-of-likes'>${likes.length > 0 ? likes[0].likes : 0} likes</p>
+          </div>
         </div>
         <button type='button' class='buttons'>Comments</button>
         <button type='button' class='buttons'>Reservations</button>
