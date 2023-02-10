@@ -1,4 +1,4 @@
-import involvementAPI from './involvementAPI.js';
+import involvementAPI from './involvementAPI';
 
 const getLikes = async () => {
   const response = await fetch(involvementAPI);
