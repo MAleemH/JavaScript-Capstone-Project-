@@ -184,9 +184,11 @@ footer {
   flex-direction: row;
   justify-content: center;
 }
-.comment p{
-  margin: 2px 0 0 0; 
+
+.comment p {
+  margin: 2px 0 0 0;
 }
-.commentsTitle{
+
+.commentsTitle {
   font-size: 30px;
 }
