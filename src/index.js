@@ -1,4 +1,4 @@
 import './style.css';
-import displayAllShows from './modules/displayShows.js';
+import displayAllShows from './modules/displayShows';
 
 displayAllShows();

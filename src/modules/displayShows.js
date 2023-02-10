@@ -1,7 +1,6 @@
-import fetchData from './fetchData.js';
-
-import getLikes from './getLikes.js';
-import getSingleData from './popup.js';
+import fetchData from './fetchData';
+import getLikes from './getLikes';
+import getSingleData from './popup';
 
 const showList = document.querySelector('.shows-list');
 
