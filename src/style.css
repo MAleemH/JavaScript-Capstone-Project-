@@ -66,6 +66,10 @@ main {
   align-items: center;
 }
 
+#likeButton:hover {
+  cursor: pointer;
+}
+
 .no-of-likes {
   margin: 2px 0 0 0;
 }

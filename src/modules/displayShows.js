@@ -1,23 +1,28 @@
+/* eslint-disable eqeqeq */
+// import addNewLike from './addNewLike.js';
 import fetchData from './fetchData.js';
-
 import getLikes from './getLikes.js';
 import getSingleData from './popup.js';
 
 const showList = document.querySelector('.shows-list');
 
 const displayAllShows = async () => {
+  // getting data for shows
   const getData = await fetchData();
+  // getting data for likes
   const getLikesData = await getLikes();
   showList.innerHTML = '';
   getData.forEach((data) => {
-    const likes = getLikesData.filter((like) => like.item_id === data.id);
+    // getting likes data for specific show
+    const likes = getLikesData.filter((like) => like.item_id == data.id);
+    // displaying data
     showList.innerHTML += `
       <div class='card'>
-        <img src='${data.image.medium}' alt='Thumbnail' >
+        <img src='${data.image.medium}' alt='Thumbnail'>
         <div class='title-like'>
           <p class='show-name'>${data.name}</p>
           <div class='display-likes'>
-            <i class="fa-regular fa-heart"></i>
+            <i class='fa-regular fa-heart' id='likeButton' data-id='${data.id}'></i>
             <p class='no-of-likes'>${likes.length > 0 ? likes[0].likes : 0} likes</p>
           </div>
         </div>
@@ -27,6 +32,7 @@ const displayAllShows = async () => {
     `;
   });
 
+  // show popup window
   const popup = document.querySelector('.popup');
   const btnComment = document.querySelectorAll('.btn-comment');
   Array.from(btnComment)?.forEach((button) => {
