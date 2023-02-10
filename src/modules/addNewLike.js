@@ -1,4 +1,4 @@
-import involvementAPI from './involvementAPI.js';
+import involvementAPI from './involvementAPI';
 
 const addNewLike = async (id) => {
   await fetch(involvementAPI, {
