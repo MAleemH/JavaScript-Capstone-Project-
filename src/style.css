@@ -130,6 +130,8 @@ footer {
 .popup {
   display: none;
   position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
   top: 0;
   left: 0;
   width: 100%;
@@ -175,4 +177,16 @@ footer {
 .summary {
   display: flex;
   flex-direction: row;
+}
+
+.comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.comment p{
+  margin: 2px 0 0 0; 
+}
+.commentsTitle{
+  font-size: 30px;
 }
