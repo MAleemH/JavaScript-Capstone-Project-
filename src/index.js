@@ -1,6 +1,6 @@
 import './style.css';
-import displayAllShows from './modules/displayShows.js';
-import addNewLike from './modules/addNewLike.js';
+import displayAllShows from './modules/displayShows';
+import addNewLike from './modules/addNewLike';
 
 displayAllShows();
 
