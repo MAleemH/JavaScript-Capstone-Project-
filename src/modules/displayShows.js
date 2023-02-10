@@ -22,7 +22,7 @@ const displayAllShows = async () => {
         <div class='title-like'>
           <p class='show-name'>${data.name}</p>
           <div class='display-likes'>
-            <i class='fa-regular fa-heart' id='likeButton' data-id='${data.id}'></i>
+            <i class='fa-regular fa-heart likeButton' id='likeButton' data-id='${data.id}'></i>
             <p class='no-of-likes'>${likes.length > 0 ? likes[0].likes : 0} likes</p>
           </div>
         </div>
