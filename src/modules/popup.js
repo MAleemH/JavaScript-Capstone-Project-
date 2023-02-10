@@ -26,5 +26,4 @@ const getSingleData = async (id) => {
   popup.append(popupContent, popupClose);
   updateComment(singleData?.id);
 };
-
 export default getSingleData;
