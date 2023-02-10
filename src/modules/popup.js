@@ -1,5 +1,5 @@
-import updateComment from "./comments.js";
-import fetchData from "./fetchData.js";
+import updateComment from './comments';
+import fetchData from './fetchData';
 
 const getSingleData = async (id) => {
   const getData = await fetchData();
