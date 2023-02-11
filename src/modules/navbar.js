@@ -7,6 +7,6 @@ const displayNavbar = () => {
     <li><a href="#">People</a></li>
     <li><a href="#">Network</a></li>
   `;
-}
+};
 
 export default displayNavbar;
