@@ -9,8 +9,8 @@ window.addEventListener('click', async (e) => {
   const likeB = e.target;
   if (likeB.classList.contains('likeButton')) {
     const showId = likeB.getAttribute('data-id');
-    // console.log(showId);
-    await addNewLike(showId);
-    // window.location.reload();
+    const intIdOfShow = parseInt(showId, 10);
+    await addNewLike(intIdOfShow);
+    window.location.reload();
   }
 });
