@@ -1,5 +1,5 @@
 /** @jest-environment jsdom */
-import domCounter from "./modules/domCounter";
+import domCounter from './modules/domCounter';
 
 describe('Count number of shows', () => {
   test('If there is only one show then dom counter should display 1', () => {
@@ -18,4 +18,4 @@ describe('Count number of shows', () => {
     `;
     expect((domCounter())).toEqual(5);
   });
-})
+});
