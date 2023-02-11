@@ -37,23 +37,24 @@ To get a local copy up and running, follow these steps.
 
 ### Install <a name="install"></a>
 
-Install this project with:
-
-- to install locally run git clone https://github.com/MAleemH/JavaScript-Capstone-Project-.git
+To intall the project use following commands:
 
 ```js
-npm install
+  git clone https://github.com/MAleemH/JavaScript-Capstone-Project-.git
+```
+```js
+  npm install
 ```
 
 ### Usage
 
-To build a webpack bundle file,run
+To build a webpack bundle file, run following command:
 
 ```js
 npm run build
 ```
 
-If you want to build and run the local server, run
+If you want to build and run the local server, run following command:
 
 ```js
 npm start
