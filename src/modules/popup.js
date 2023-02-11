@@ -1,14 +1,14 @@
-import { postComment } from "./addComment";
-import updateComment, { addUi } from "./comments";
-import fetchData from "./fetchData";
+import { postComment } from './addComment';
+import updateComment, { addUi } from './comments';
+import fetchData from './fetchData';
 
 const getSingleData = async (id) => {
   const getData = await fetchData();
   const singleData = getData.find((data) => data.id === parseInt(id, 10));
 
-  const popup = document.querySelector(".popup");
-  const popupContent = document.querySelector(".popup-content");
-  const popupClose = document.querySelector(".popup-close");
+  const popup = document.querySelector('.popup');
+  const popupContent = document.querySelector('.popup-content');
+  const popupClose = document.querySelector('.popup-close');
   popupContent.innerHTML = `<img src='${singleData.image.original}' alt='Thumbnail' class='img-card' >
       <div class='popup-info'>
           <h1>${singleData?.name}</h1>
@@ -30,32 +30,32 @@ const getSingleData = async (id) => {
       </div>
       `;
 
-  const name = document.getElementById("name");
-  const comment = document.getElementById("comment");
-  const submit = document.getElementById("subComment");
+  const name = document.getElementById('name');
+  const comment = document.getElementById('comment');
+  const submit = document.getElementById('subComment');
 
-  submit.addEventListener("click", async (e) => {
+  submit.addEventListener('click', async (e) => {
     e.preventDefault();
 
-    //Add new comment
-    if (name.value !== "" && comment.value !== "") {
+    // Add new comment
+    if (name.value !== '' && comment.value !== '') {
       await postComment(singleData?.id, name.value, comment.value);
       addUi(name.value, comment.value);
-      name.value = "";
-      comment.value = "";
+      name.value = '';
+      comment.value = '';
     }
     // updateComment(singleData?.id);
   });
 
-  //Update popup and add comments
+  // Update popup and add comments
   updateComment(singleData?.id);
 
-  //Close button
-  popupClose.addEventListener("click", () => {
-    popup.classList.remove("show");
+  // Close button
+  popupClose.addEventListener('click', () => {
+    popup.classList.remove('show');
     // clear the comments
-    const comments = document.querySelector(".comments");
-    comments.innerHTML = "";
+    const comments = document.querySelector('.comments');
+    comments.innerHTML = '';
   });
 
   popup.append(popupContent, popupClose);
