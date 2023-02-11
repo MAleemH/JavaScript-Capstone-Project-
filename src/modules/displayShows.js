@@ -35,6 +35,12 @@ const displayAllShows = async () => {
       popup.classList.add('show');
     });
   });
+
+  // no of shows
+  const navItem = document.querySelector('.navItem');
+  const cards = document.querySelectorAll('.card');
+  const noOfShows = cards.length;
+  navItem.innerHTML += `Shows (${noOfShows})`;
 };
 
 export default displayAllShows;

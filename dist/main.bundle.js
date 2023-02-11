@@ -165,7 +165,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/PHTvFFWrOpX4Hcee8n1y/comments/';\r\nconst commentsData = async (id) => {\r\n  const response = await fetch(`${url}?item_id=${id}`);\r\n  const data = await response.json();\r\n  return data;\r\n};\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (commentsData);\n\n//# sourceURL=webpack://webpack-tutorial/./src/modules/fetchComments.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/PHTvFFWrOpX4Hcee8n1y/comments/';\nconst commentsData = async (id) => {\n  const response = await fetch(`${url}?item_id=${id}`);\n  const data = await response.json();\n  return data;\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (commentsData);\n\n//# sourceURL=webpack://webpack-tutorial/./src/modules/fetchComments.js?");
 
 /***/ }),
 
@@ -175,7 +175,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst url = 'https://api.tvmaze.com/shows';\r\n\r\nconst fetchData = async () => {\r\n  const response = await fetch(url);\r\n  const data = await response.json();\r\n  return data;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fetchData);\n\n//# sourceURL=webpack://webpack-tutorial/./src/modules/fetchData.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst url = 'https://api.tvmaze.com/shows';\n\nconst fetchData = async () => {\n  const response = await fetch(url);\n  const data = await response.json();\n  return data;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fetchData);\n\n//# sourceURL=webpack://webpack-tutorial/./src/modules/fetchData.js?");
 
 /***/ }),
 
@@ -185,7 +185,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _involvementAPI__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./involvementAPI */ \"./src/modules/involvementAPI.js\");\n\r\n\r\nconst getLikes = async () => {\r\n  const response = await fetch(_involvementAPI__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\r\n  const data = await response.json();\r\n  return data;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getLikes);\n\n//# sourceURL=webpack://webpack-tutorial/./src/modules/getLikes.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _involvementAPI__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./involvementAPI */ \"./src/modules/involvementAPI.js\");\n\n\nconst getLikes = async () => {\n  const response = await fetch(_involvementAPI__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n  const data = await response.json();\n  return data;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getLikes);\n\n//# sourceURL=webpack://webpack-tutorial/./src/modules/getLikes.js?");
 
 /***/ }),
 
@@ -195,7 +195,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst involvementAPI = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/PHTvFFWrOpX4Hcee8n1y/likes/';\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (involvementAPI);\n\n//# sourceURL=webpack://webpack-tutorial/./src/modules/involvementAPI.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst involvementAPI = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/PHTvFFWrOpX4Hcee8n1y/likes/';\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (involvementAPI);\n\n//# sourceURL=webpack://webpack-tutorial/./src/modules/involvementAPI.js?");
 
 /***/ }),
 

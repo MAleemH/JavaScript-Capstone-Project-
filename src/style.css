@@ -12,6 +12,10 @@ body {
   font-weight: bold;
 }
 
+.showItem {
+  border-bottom: 1px solid black;
+}
+
 .logo-circle {
   border: 1px solid black;
   height: 50px;
