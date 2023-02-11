@@ -1,6 +1,7 @@
 import fetchData from './fetchData';
 import getLikes from './getLikes';
 import getSingleData from './popup';
+import domCounter from './domCounter';
 
 const showList = document.querySelector('.shows-list');
 
@@ -37,10 +38,9 @@ const displayAllShows = async () => {
   });
 
   // no of shows
+  const countShows = domCounter();
   const navItem = document.querySelector('.navItem');
-  const cards = document.querySelectorAll('.card');
-  const noOfShows = cards.length;
-  navItem.innerHTML += `Shows (${noOfShows})`;
+  navItem.innerHTML += `Shows (${countShows})`;
 };
 
 export default displayAllShows;
