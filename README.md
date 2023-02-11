@@ -1,31 +1,96 @@
+<a name="readme-top"></a>
+
+<!--
+HOW TO USE:
+This is an example of how you may give instructions on setting up your project locally.
+
+Modify this file to match your project and remove sections that don't apply.
+
+REQUIRED SECTIONS:
+- Table of Contents
+- About the Project
+  - Built With
+  - Live Demo
+- Getting Started
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
+
+OPTIONAL SECTIONS:
+- FAQ
+
+After you're finished please remove all the comments and instructions!
+-->
+
+<div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <!-- <img src="murple_logo.png" alt="logo" width="140"  height="auto" /> -->
+  <br/>
+
+  <h3><b>README</b></h3>
+
+</div>
+
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [\[JavaScript-Capstone-Project-\] ](#javascript-capstone-project--)
+- [📖 Leaderboard ](#-leaderboard-)
   - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
     - [Setup](#setup)
-    - [Install ](#install-)
     - [Usage](#usage)
-  - [Authors ](#authors-)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
-  - [Show your support ](#show-your-support-)
-  - [Acknowledgments ](#acknowledgments-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ ](#-faq-)
   - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
-# [JavaScript-Capstone-Project-] <a name="about-project"></a>
+# 📖 TV Shows <a name="about-project"></a>
 
-- This is a web app where you can see a collection of shows, add comments, and drop likes.
+**TV Shows** website displays tv shows. User can interact with it. He/She can like and comment on any show.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-- HTML
-- CSS
-- Javascript
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Languages</summary>
+  <ul>
+    <li>JavaScript</li>
+    <li>HTML</li>
+    <li>CSS</li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **Responsive**
+- **Dynamic**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://maleemh.github.io/JavaScript-Capstone-Project-/dist/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -33,60 +98,98 @@
 
 To get a local copy up and running, follow these steps.
 
+### Prerequisites
+
+- Code Editor
+- Github
+
 ### Setup
 
-### Install <a name="install"></a>
+Clone this repository to your local machine:
 
-To intall the project use following commands:
-
-```js
+```sh
   git clone https://github.com/MAleemH/JavaScript-Capstone-Project-.git
-```
-```js
-  npm install
 ```
 
 ### Usage
 
-To build a webpack bundle file, run following command:
+Open your terminal of VS Code and write following commands to run this project on local server:
 
-```js
-npm run build
+```sh
+  npm run build
+  npm run start
 ```
 
-If you want to build and run the local server, run following command:
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-```js
-npm start
-```
+<!-- AUTHORS -->
 
-## Authors <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
+
+👤 **Muhammad Aleem**
+
+- GitHub: [@githubhandle](https://github.com/MAleemH)
+- Twitter: [@twitterhandle](https://twitter.com/MAleemHashmi1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/muhammad-aleem-hashmi-09658a171/)
 
 👤 **Elhama Tokhi**
 
 - GitHub: [@githubhandle](https://github.com/elhamatokhi)
-- Gmail: [@bakhtmohammadtokhi](bakhtmohammadtokhi@gmail.com)
 
-👤 **Muhammad Aleem** 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- GitHub: [@githubhandle](https://github.com/MAleemH)
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Add reservation**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/MAleemH/JavaScript-Capstone-Project-/issues).
 
-## Show your support <a name="support"></a>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Give a ⭐️ if you like this project!
+<!-- SUPPORT -->
 
-## Acknowledgments <a name="acknowledgements"></a>
+## ⭐️ Show your support <a name="support"></a>
 
-- Hat tip to anyone who inspired this project
+If you like this project then please do follow me and give a star to this repo.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank all of them who showed thier support.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ <a name="faq"></a>
+
+- **Can I use your code for my project?**
+
+  - Alright, you can get understanding from my code. I strongly recommend you to write your own code. It will give you better understanding. Thanks.
+
+- **Will you help me to solve my problem in my code?**
+
+  - Yes, It will be my pleasure to help you to solve your problem in your code.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
-<a name="readme-top"></a>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
