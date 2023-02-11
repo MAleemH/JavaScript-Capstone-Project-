@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import fetchData from './fetchData';
 import getLikes from './getLikes';
 import getSingleData from './popup';
@@ -9,14 +10,14 @@ const displayAllShows = async () => {
   const getLikesData = await getLikes();
   showList.innerHTML = '';
   getData.forEach((data) => {
-    const likes = getLikesData.filter((like) => like.item_id === data.id);
+    const likes = getLikesData.filter((like) => like.item_id == data.id);
     showList.innerHTML += `
       <div class='card'>
         <img src='${data.image.medium}' alt='Thumbnail' >
         <div class='title-like'>
           <p class='show-name'>${data.name}</p>
           <div class='display-likes'>
-            <i class="fa-regular fa-heart"></i>
+            <i class='fa-regular fa-heart likeButton' id='likeButton' data-id='${data.id}'></i>
             <p class='no-of-likes'>${likes.length > 0 ? likes[0].likes : 0} likes</p>
           </div>
         </div>
