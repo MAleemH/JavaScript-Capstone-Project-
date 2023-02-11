@@ -146,6 +146,59 @@ footer {
   margin: 2px 0 0 0;
 }
 
-.commentsTitle {
+.commentsTitle,
+.addCommentHeader,
+.commentsHTML {
   font-size: 30px;
+  margin: 20px 0 0 0;
+  font-weight: bold;
+}
+
+.add-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form {
+  width: 30%;
+  height: 30%;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+}
+
+.items {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  padding: 5px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  width: 100%;
+}
+
+.submit {
+  align-self: flex-end;
+  background-color: white;
+  border-radius: 2px;
+  border: 3px solid black;
+  box-shadow: 2px 3px #000;
+  font-weight: bold;
+  padding: 0.5rem;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.displayNone {
+  display: none;
 }
