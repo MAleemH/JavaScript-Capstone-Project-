@@ -1,6 +1,6 @@
 import './style.css';
-import displayAllShows from './modules/displayShows.js';
-import addNewLike from './modules/addNewLike.js';
+import displayAllShows from './modules/displayShows';
+import addNewLike from './modules/addNewLike';
 
 displayAllShows();
 
@@ -9,8 +9,8 @@ window.addEventListener('click', async (e) => {
   const likeB = e.target;
   if (likeB.classList.contains('likeButton')) {
     const showId = likeB.getAttribute('data-id');
-    console.log(showId);
+    // console.log(showId);
     await addNewLike(showId);
     // window.location.reload();
   }
-})
+});

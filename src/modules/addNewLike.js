@@ -1,14 +1,14 @@
-import involvementAPI from './involvementAPI.js';
+import involvementAPI from './involvementAPI';
 
 const addNewLike = async (id) => {
-  await fetch (involvementAPI, {
+  await fetch(involvementAPI, {
     method: 'POST',
     body: JSON.stringify({
       item_id: id,
     }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
-    }
+    },
   });
 };
 
