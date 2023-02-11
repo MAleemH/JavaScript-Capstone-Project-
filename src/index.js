@@ -1,7 +1,9 @@
 import './style.css';
 import displayAllShows from './modules/displayShows';
 import addNewLike from './modules/addNewLike';
+import displayNavbar from './modules/navbar';
 
+displayNavbar();
 displayAllShows();
 
 // add new like
